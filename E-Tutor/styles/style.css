@@ -12,13 +12,13 @@
   --gray-00: #ffffff;
   --orange-900: #33140b;
   --orange-800: #662916;
-  --orange-900: #993d20;
-  --orange-900: #cc522b;
-  --orange-900: #ff6636;
-  --orange-900: #ff855e;
-  --orange-900: #ffa386;
-  --orange-900: #ffddd1;
-  --orange-900: #ffeee8;
+  --orange-700: #993d20;
+  --orange-600: #cc522b;
+  --orange-500: #ff6636;
+  --orange-400: #ff855e;
+  --orange-300: #ffa386;
+  --orange-200: #ffddd1;
+  --orange-100: #ffeee8;
   --blue-900: #111033;
   --blue-800: #222065;
   --blue-700: #342f98;
@@ -60,13 +60,152 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
-.nav-item {
-  list-style-type: none;
+/* Upper part of nav */
+.nav .upper {
+  height: 52px;
+  width: 100%;
+  background-color: var(--bg-gray-900);
 }
 
-.upper {
-  width: 52px;
+.nav .upper .left .nav-item li a {
+  text-decoration: none;
+  color: var(--gray-500);
 }
+
+.nav .upper .left .nav-item li .active {
+  color: var(--gray-00);
+}
+
+.nav .upper .left .nav-item .indicator::before {
+  content: "";
+  position: absolute;
+  left: 57px;
+  width: 71px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: var(--danger-500);
+}
+
+.transparent {
+  appearance: none;
+  background: transparent;
+  background-image: url(./../asset/images/ChevronDown.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position the icon */
+  padding-right: 40px; /* Space for the icon */
+  border: none;
+  color: var(--gray-500);
+}
+
+/* Lower part of nav */
+
+.lower {
+  height: 96px;
+  width: 100%;
+  padding: 24px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lower .logo {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.lower .logo img {
+  margin: 4px;
+}
+
+.lower .logo .brand-name {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.lower .browse-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 640px;
+  margin-right: 230px;
+}
+
+.lower .browse-search .browse {
+  font-size: 18px;
+  display: flex;
+  padding-left: 16px;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  border: 1px solid var(--gray-100);
+  border-radius: 2px;
+}
+
+.lower .browse-search .browse .transparent {
+  padding-right: 110px; /* Space for the icon */
+}
+
+.lower .browse-search .search-div {
+  width: 424px;
+  height: 48px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid var(--gray-100);
+  border-radius: 2px;
+}
+
+.lower .browse-search .search-div input {
+  width: 100%;
+  border: none;
+}
+
+.lower .browse-search .search-div img {
+  font-size: 18px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.lower .notification {
+  width: 424px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 20px;
+  align-items: center;
+}
+
+.lower .notification .btns {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+.lower .notification .create-acc-btn {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  width: 168px;
+  height: 48px;
+  background-color: var(--warning-100);
+  color: var(--orange-500);
+  font-weight: 600;
+}
+
+.lower .notification .sign-btn {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  width: 100px;
+  height: 48px;
+  font-weight: 600;
+  color: var(--gray-00);
+  background-color: var(--orange-500);
+}
+
+/* hero-first */
