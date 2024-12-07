@@ -105,6 +105,7 @@
 /* Lower part of nav */
 
 .lower {
+  background-color: var(--gray-00);
   height: 96px;
   width: 100%;
   padding: 24px 32px;
@@ -133,7 +134,7 @@
   justify-content: space-between;
   align-items: center;
   width: 640px;
-  margin-right: 220px;
+  margin-right: 210px;
 }
 
 .lower .browse-search .browse {
@@ -223,7 +224,8 @@
   width: 658px;
   height: 348px;
   margin-top: 100px;
-  margin-left: 250px;
+  margin-left: 200px;
+  margin-right: 20px;
 }
 
 .hero-section .hero-1 .hero-1-text h1 {
@@ -246,4 +248,154 @@
   background-color: var(--orange-500);
   color: var(--gray-00);
   font-weight: 600;
+}
+
+.hero-section .hero-2 {
+  height: 680px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+}
+
+.hero-section .hero-2 .heading {
+  position: relative;
+  top: 65px;
+}
+
+.hero-section .hero-2 .container {
+  width: 1320px;
+  height: 360px;
+  margin-top: 120px;
+  margin-right: 99px;
+  margin-left: 99px;
+  display: grid;
+  grid-template-columns: 312px 312px 312px 312px;
+  grid-template-rows: 104px 104px 104px;
+  gap: 24px;
+}
+
+.hero-section .hero-2 .container .item {
+  width: 312px;
+  height: 104px;
+  padding: 20px;
+  display: flex;
+}
+
+.hero-section .hero-2 .container .item img {
+  margin-right: 20px;
+}
+
+.hero-section .hero-2 .container .item .text-info {
+  height: 52px;
+  width: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero-section .hero-2 .container .item .text-info .title {
+  align-items: start;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--bg-gray-900);
+}
+
+.hero-section .hero-2 .container .item .text-info .sub-title {
+  align-items: start;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-600);
+}
+
+.hero-section .hero-2 .browse-more {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.hero-section .hero-2 .browse-more p {
+  color: var(--gray-700);
+  font-size: 18px;
+  margin: 5px;
+}
+
+.hero-section .hero-2 .browse-more span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--orange-500);
+  margin: 5px;
+}
+
+.hero-section .hero-2 .container .item:nth-child(1) {
+  background-color: var(--blue-100);
+}
+.hero-section .hero-2 .container .item:nth-child(2) {
+  background-color: var(--green-100);
+}
+.hero-section .hero-2 .container .item:nth-child(3) {
+  background-color: var(--warning-100);
+}
+.hero-section .hero-2 .container .item:nth-child(4) {
+  background-color: var(--danger-100);
+}
+.hero-section .hero-2 .container .item:nth-child(5) {
+  background-color: var(--gray-00);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.hero-section .hero-2 .container .item:nth-child(6) {
+  background-color: var(--gray-50);
+}
+.hero-section .hero-2 .container .item:nth-child(7) {
+  background-color: var(--blue-100);
+}
+.hero-section .hero-2 .container .item:nth-child(8) {
+  background-color: var(--gray-50);
+}
+.hero-section .hero-2 .container .item:nth-child(9) {
+  background-color: var(--warning-100);
+}
+.hero-section .hero-2 .container .item:nth-child(10) {
+  background-color: var(--danger-100);
+}
+.hero-section .hero-2 .container .item:nth-child(11) {
+  background-color: var(--green-100);
+}
+.hero-section .hero-2 .container .item:nth-child(12) {
+  background-color: var(--warning-100);
+}
+
+/* hero-3 */
+.hero-section .hero-3 {
+  height: 1179px;
+  position: static;
+  background-color: var(--gray-50);
+}
+
+.hero-section .hero-3 .best-courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .hero-3 .best-courses h2 {
+  position: relative;
+  top: 65px;
+  height: 48px;
+  font-size: 44px;
+  font-weight: 650;
+  align-items: center;
+}
+
+.hero-section .hero-3 .best-courses .best-course-container {
+  margin-top: 120px;
+  height: 691px;
+  width: 1320px;
+}
+
+.hero-section .hero-3 .best-courses .best-course-container {
+  width: 244px;
+  height: 333px;
 }
