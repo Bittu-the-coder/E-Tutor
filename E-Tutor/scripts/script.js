@@ -3,6 +3,18 @@ const rootStyles = getComputedStyle(document.documentElement);
 
 // Get all category elements
 const categories = document.querySelectorAll(".cat");
+const courseCost = document.querySelectorAll(".cost");
+console.log(courseCost);
+
+courseCost.forEach((cost) => {
+  const costClass = cost.classList[1];
+  const costColor = `--${costClass}-500`;
+  const costTextColor = rootStyles.getPropertyValue(costColor).trim();
+
+  if (costTextColor) {
+    cost.style.color = costColor;
+  }
+});
 
 categories.forEach((category) => {
   // Get the category class (e.g., 'design', 'music')
