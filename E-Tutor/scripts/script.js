@@ -4,15 +4,23 @@ const rootStyles = getComputedStyle(document.documentElement);
 // Get all category elements
 const categories = document.querySelectorAll(".cat");
 const courseCost = document.querySelectorAll(".cost");
-console.log(courseCost);
-
 courseCost.forEach((cost) => {
-  const costClass = cost.classList[1];
-  const costColor = `--${costClass}-500`;
-  const costTextColor = rootStyles.getPropertyValue(costColor).trim();
+  const costClass = cost.classList[1]; // Get the specific class for the course
 
+  // Define the CSS variable names
+  const costColorVar = `--${costClass}-500`; // Text color variable
+  const bgCostColorVar = `--${costClass}-100`; // Background color variable
+
+  // Resolve the actual colors from root styles
+  const costTextColor = rootStyles.getPropertyValue(costColorVar).trim();
+  const costBgColor = rootStyles.getPropertyValue(bgCostColorVar).trim();
+
+  // Apply the resolved colors
+  if (costBgColor) {
+    cost.style.backgroundColor = costBgColor;
+  }
   if (costTextColor) {
-    cost.style.color = costColor;
+    cost.style.color = costTextColor; // Use resolved value, not the variable name
   }
 });
 
