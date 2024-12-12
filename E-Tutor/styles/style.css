@@ -341,6 +341,11 @@
   margin: 5px;
 }
 
+.hero-section .hero-2 .browse-more a {
+  text-decoration: none;
+  transform: translateY(6px);
+}
+
 .hero-section .hero-2 .container .item:nth-child(1) {
   background-color: var(--blue-100);
 }
