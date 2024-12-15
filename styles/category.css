@@ -149,3 +149,179 @@
 .rating-std-number .std-number span:nth-child(2) {
   color: var(--gray-500);
 }
+
+.popular-tools {
+  margin-left: 100px;
+  height: 350px;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.popular-tools .arrows {
+  transform: translateX(530px);
+}
+
+.popular-tools .arrows img:nth-child(1) {
+  transform: rotate(180deg);
+}
+.popular-tools .arrows img {
+  color: var(--gray-400);
+}
+
+.popular-tools .tools {
+  grid-column: 1 / span 2;
+  display: flex;
+}
+
+.popular-tools .tools .tool {
+  width: 200px;
+  height: 94px;
+  display: flex;
+  margin-right: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.05) 0px 0px 0px 1px;
+}
+
+.popular-tools .tools .tool:nth-child(5) {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.popular-tools .tools .tool span:nth-child(1) {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--gray-900);
+}
+
+.popular-tools .tools .tool span:nth-child(2) {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray-400);
+}
+
+.popular-tools .tags {
+  grid-column: 1 / span2;
+  margin-top: 50px;
+  display: flex;
+}
+
+.popular-tools .tags span {
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.popular-tools .tags .tag-row {
+  display: flex;
+  width: 1000px;
+  height: 32px;
+}
+
+.popular-tools .tags .tag-row span {
+  font-size: 14px;
+  padding: 0px 8px;
+  width: auto;
+  margin-right: 10px;
+  height: 32px;
+  background-color: var(--gray-50);
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+}
+
+.popular-tools .tags .tag-row span:nth-child(4) {
+  background-color: var(--orange-500);
+  color: var(--gray-00);
+}
+
+.hero-section .hero-2 {
+  height: 610px;
+  width: 100%;
+  background-color: var(--gray-50);
+  box-shadow: none;
+}
+
+.hero-section .hero-2 h2 {
+  margin-bottom: 40px;
+  transform: translateY(60px);
+}
+
+.hero-section .hero-2 .popular-instructor {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 244px 244px 244px 244px 244px;
+  gap: 25px;
+  margin-bottom: 50px;
+  box-shadow: none;
+}
+
+.hero-section .hero-2 .popular-instructor .instructor {
+  width: 244px;
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-00);
+}
+
+.hero-section .hero-2 .popular-instructor .instructor .name-sub {
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-section
+  .hero-2
+  .popular-instructor
+  .instructor
+  .name-sub
+  span:nth-child(1) {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.hero-section
+  .hero-2
+  .popular-instructor
+  .instructor
+  .name-sub
+  span:nth-child(2) {
+  font-size: 16px;
+  color: var(--gray-400);
+}
+
+.hero-section .hero-2 .popular-instructor .instructor .rating-std {
+  margin-top: 10px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero-section .hero-2 .popular-instructor .instructor .rating-std .rating {
+  margin-right: 20px;
+}
+
+.hero-section .hero-2 .popular-instructor .instructor .rating-std .stds {
+  margin-left: 20px;
+}
+
+.hero-section
+  .hero-2
+  .popular-instructor
+  .instructor
+  .rating-std
+  .stds
+  span:nth-child(2) {
+  color: var(--gray-400);
+}
+
+.hero-section .hero-2 p {
+  color: var(--gray-700);
+}
+
+.hero-section .hero-2 p span {
+  color: var(--orange-500);
+}
