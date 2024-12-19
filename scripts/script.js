@@ -51,3 +51,42 @@ categories.forEach((category) => {
     category.style.color = paraColor;
   }
 });
+
+// category courses by js
+
+console.log(courses.length);
+
+const courseContainer = document.querySelector(".courses");
+console.log(courses);
+
+courses.forEach((course) => {
+  const courseDiv = document.createElement("div");
+
+  courseDiv.innerHTML = `
+            <img
+              src="${course.img}"
+            />
+            <div class="cat-cost">
+              <span class="cat ${course.id}">${course.category}</span>
+              <span class="cost">$57</span>
+            </div>
+            <div class="title">${course.title}</div>
+            <div class="indicator-line"></div>
+            
+            <div class="rating-std-number px-3">
+              <div class="rating d-flex align-content-center">
+                <img class="mx-1" src="./asset/images/Vector.svg" alt="star" />
+                <span>${course.rating}</span>
+              </div>
+              <div class="std-number d-flex align-content-center">
+                <img src="./asset/images/User.svg" />
+                <span class="mx-1">${course.numberOfStd}</span>
+                <span class="fw-normal">students</span>
+              </div>
+            </div>
+    `;
+
+  courseDiv.classList.add("course");
+
+  courseContainer.append(courseDiv);
+});
