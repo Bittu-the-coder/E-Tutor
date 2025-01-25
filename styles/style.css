@@ -1466,3 +1466,9 @@ footer .third-footer .copyright-lang .language {
 footer .third-footer .copyright-lang .language .transparent {
   padding-right: 70px; /* Space for the icon */
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
