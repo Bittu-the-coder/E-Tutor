@@ -56,7 +56,8 @@
   .best-course-container
   .course-item
   .discription
-  .cat-cost {
+  .cat-cost,
+.cat-cost {
   display: flex;
   justify-content: space-between;
 }
@@ -69,7 +70,8 @@
   .discription
   .cat-cost
   .cat,
-.cat {
+.cat,
+.cat-cost .cat {
   width: auto;
   padding: 5px;
   height: 20px;
@@ -90,7 +92,8 @@
   .course-item
   .discription
   .cat-cost
-  .cost {
+  .cost,
+.cat-cost .cost {
   height: 22px;
   width: 30px;
   font-weight: 500;

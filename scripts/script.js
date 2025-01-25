@@ -78,13 +78,14 @@ courses.forEach((course) => {
                 <img class="mx-1" src="./asset/images/Vector.svg" alt="star" />
                 <span>${course.rating}</span>
               </div>
-              <div class="std-number d-flex align-content-center">
+              <div class="std-number d-flex align-content-center mb-0">
                 <img src="./asset/images/User.svg" />
                 <span class="mx-1">${course.numberOfStd}</span>
                 <span class="fw-normal">students</span>
               </div>
             </div>
     `;
+  courseDiv.classList.add("course-items");
 
   courseDiv.classList.add("course");
 
