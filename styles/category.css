@@ -331,7 +331,7 @@
 }
 
 .course-container {
-  height: 2846px;
+  height: 2250px;
 }
 
 .course-container .filter {
@@ -451,4 +451,40 @@
 .course-container .courses .course {
   width: 312px;
   height: 388px;
+}
+
+.pagination {
+  height: 50px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 0px;
+  transform: translateY(390px);
+  margin-left: 500px;
+}
+.pagination a {
+  text-decoration: none;
+
+  color: #ff6d3b;
+  font-size: 20px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.pagination a.active {
+  background-color: #ff6d3b;
+  color: white;
+}
+
+.pagination a.inactive {
+  background-color: #ffede6;
+  color: #ff6d3b;
+}
+.pagination a.arrow {
+  color: #ffb39f;
 }

@@ -66,17 +66,20 @@ courses.forEach((course) => {
             <img
               src="${course.img}"
             />
-            <div class="cat-cost">
-              <span class="cat ${course.id}">${course.category}</span>
-              <span class="cost">$57</span>
+            <div class="cat-cost mt-2 mx-3">
+              <span class="cat ${course.id} p-2">${course.category}</span>
+              <span class="cost fs-6">$57</span>
             </div>
-            <div class="title">${course.title}</div>
+            <div class="title mb-2 mx-3">${course.title}</div>
             <div class="indicator-line"></div>
             
-            <div class="rating-std-number px-3">
+
+            <div class="rating-std-number mx-3">
               <div class="rating d-flex align-content-center">
                 <img class="mx-1" src="./asset/images/Vector.svg" alt="star" />
                 <span>${course.rating}</span>
+
+
               </div>
               <div class="std-number d-flex align-content-center mb-0">
                 <img src="./asset/images/User.svg" />
@@ -87,7 +90,7 @@ courses.forEach((course) => {
     `;
   courseDiv.classList.add("course-items");
 
-  courseDiv.classList.add("course");
+  courseDiv.classList.add("course", "shadow");
 
   courseContainer.append(courseDiv);
 });

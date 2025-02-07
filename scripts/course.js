@@ -3,7 +3,7 @@ const courses = [
     img: "./asset/images/All category courses/Course Images-0.svg",
     category: "IT & Software",
     price: "$35",
-    title: "Learn Python Programming Masterclass",
+    title: "Learn Python Programming with Masterclass",
     line: "",
     rating: "4.0",
     numberOfStd: "211,434",

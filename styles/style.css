@@ -1468,7 +1468,13 @@ footer .third-footer .copyright-lang .language .transparent {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    width: 100%;
+  .hero-section {
+    width: 1440px;
+  }
+  .nav {
+    width: 1440px;
+  }
+  footer {
+    width: 1440px;
   }
 }
